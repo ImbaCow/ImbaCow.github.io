@@ -1054,5 +1054,9 @@ footer form .button
 	{
 		margin-left: 0;
 		margin-right: 0;
+	}
+	.latest_works_small
+	{
+		width: 380px;
 	}	
 }
