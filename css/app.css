@@ -459,16 +459,28 @@ header .nav
 	margin-top: 12px;
 	float: right;
 }
-.hero
+.hero .orbit-controls button 
 {
-	background: url(images/hero_background.jpg) no-repeat center 0;
-	background-size: cover;
+	display: block;
+	opacity: 0;
+	background: url(images/icon_arrow_large.png) no-repeat center center;
+	transform: translateY(0%);
+	width: 16px;
+	height: 27px;
+	transition: .3s ease-out;
+	transition-property: background, opacity;
+
+	margin: 0 3%;
 }
-.hero .carousel
+.hero .orbit-controls button:hover
 {
-	padding: 293px 0 288px;
+	background: url(images/icon_arrow_large_1.png) no-repeat center center;
 }
-.hero .carousel .tittle
+.hero .orbit-controls .orbit-next
+{
+	transform: rotate(180deg);
+}
+.hero .item .tittle
 {
 	font-size: 77px;
 	letter-spacing: 5.4px;
@@ -480,7 +492,7 @@ header .nav
 
 	margin-left: 7px;
 }
-.hero .carousel .text
+.hero .item .text
 {
 	line-height: 34px;
 
@@ -492,7 +504,27 @@ header .nav
 
 	margin-top: 22px;
 }
-.hero .carousel .btn 
+.hero .item .btn a
+{
+	padding-left: 70px;
+	padding-right: 67.2px;
+
+	line-height: 32px;
+	height:  63px;
+
+	letter-spacing: 0.7px;
+	font-size: 18px;
+}
+.hero .item_1
+{
+	background: url(images/hero_background.jpg) no-repeat center 0;
+	background-size: cover;
+}
+.hero .item_1 .item
+{
+	padding: 293px 0 288px;
+}
+.hero .item_1 .item .btn 
 {
 	text-align: center;
 
@@ -511,17 +543,35 @@ header .nav
 {
 	color: #fff;
 }
-.hero .carousel .btn a
+.orbit-bullets
 {
-	padding-left: 70px;
-	padding-right: 67.2px;
-
-	line-height: 32px;
-	height:  63px;
-
-	letter-spacing: 0.7px;
-	font-size: 18px;
+	margin-top: -20px;
 }
+.bullets_container
+{
+	display: inline-block;
+	opacity: 0;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	transition: opacity .3s ease-out;
+}
+.bullets_container button
+{
+	width: 15px;
+	height: 15px;
+	background-color: #506a85;
+	margin: 2.5px;
+	transition: background .3s ease-out;	
+}
+.bullets_container button:hover, .bullets_container button.is-active
+{
+	background-color: #00bb9b;	
+}
+.hero:hover .orbit-controls button, .hero:hover .bullets_container
+{
+	opacity: 1;
+} 
 .who_we_are
 {
 	padding: 120.5px 0 109px;
@@ -759,12 +809,16 @@ header .nav
 {
 	border-radius: 3px;
 	background: url(images/icon_arrow_small.png) no-repeat center center #3c5065;
-	opacity: .5;
+	opacity: 0;
 	width: 30px;
 	height: 30px;
 	transition: opacity .3s ease-out;
 }
-.pag_container .left:hover, .pag_container .right:hover
+.latest_works .carousel:hover .left, .latest_works .carousel:hover .right
+{
+	opacity: .5;
+}
+.latest_works .pag_container .left:hover, .latest_works .pag_container .right:hover
 {
 	background: url(images/icon_arrow_small_1.png) no-repeat center center #506a85;	
 	opacity: 1;
@@ -781,6 +835,7 @@ header .nav
 .pag a
 {
 	vertical-align: middle;
+	transition: background .3s ease-out;
 	display: inline-block;
 	height: 15px;
 	width: 25px;
@@ -1056,12 +1111,12 @@ footer form .button
 }
 @media screen and (max-width: 640px) 
 {
-	.hero .carousel .tittle 
+	.hero .item .tittle 
 	{
 		font-size: 45px;
 		margin: 0;
 	}
-	.hero .carousel .btn a
+	.hero .item .btn a
 	{
 		padding: 0.85em 1em;
 	}
