@@ -1027,6 +1027,18 @@ footer form .button
 	bottom: 22px;
 	right:  20px;
 }
+@media screen and (max-width: 1023px)
+{
+	.who_we_are .sub_tittle
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.latest_works_small
+	{
+		width: 30% !important;
+	}	
+}
 @media screen and (max-width: 640px) 
 {
 	.hero .carousel .tittle 
@@ -1047,16 +1059,8 @@ footer form .button
 		float: none;
 		line-height: 40px;
 	}
-}
-@media screen and (max-width: 1024px)
-{
-	.who_we_are .sub_tittle
-	{
-		margin-left: 0;
-		margin-right: 0;
-	}
 	.latest_works_small
 	{
-		width: 380px;
+		width: 100% !important;
 	}	
 }
