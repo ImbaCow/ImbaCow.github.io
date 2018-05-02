@@ -760,6 +760,14 @@ header .nav
 	width: 30px;
 	height: 30px;
 }
+.pag_container .left
+{
+	transform: rotate(270deg);
+}
+.pag_container .right
+{
+	transform: rotate(90deg);
+}
 .pag
 {
 	text-align: center;
@@ -1061,6 +1069,6 @@ footer form .button
 	}
 	.latest_works_small
 	{
-		width: 100% !important;
+		width: 50% !important;
 	}	
 }
