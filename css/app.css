@@ -473,22 +473,58 @@ header .nav
 {
 	display: block;
 	opacity: 0;
-	background: url(images/icon_arrow_large.png) no-repeat center center;
+	background: url(images/icon_arrow_large.png) no-repeat center center #3c5065;
 	transform: translateY(0%);
-	width: 16px;
-	height: 27px;
+	width: 60px;
+	height: 60px;
+	border-radius: 3px;
 	transition: .3s ease-out;
 	transition-property: background, opacity;
 
-	margin: 0 3%;
-}
-.hero .orbit-controls button:hover
-{
-	background: url(images/icon_arrow_large_1.png) no-repeat center center;
+	top: 48%;
+	margin: 0 2%;
 }
 .hero .orbit-controls .orbit-next
 {
 	transform: rotate(180deg);
+}
+.bullets_container
+{
+	display: inline-block;
+	opacity: 0;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	transition: opacity .3s ease-out;
+}
+.bullets_container button
+{
+	width: 15px;
+	height: 15px;
+	background-color: #506a85;
+	margin: 2.5px;
+	transition: background .3s ease-out;	
+}
+.bullets_container button:hover, .bullets_container button.is-active
+{
+	background-color: #00bb9b;	
+}
+.hero .orbit-bullets
+{
+	margin-top: -20px;
+}
+.hero:hover .bullets_container
+{
+	opacity: 1;
+}
+.hero:hover .orbit-controls button
+{
+	opacity: .5;
+}
+.hero .orbit-controls button:hover
+{
+	background: url(images/icon_arrow_large_1.png) no-repeat center center #3c5065;
+	opacity: 1;
 }
 .hero .item .tittle
 {
@@ -574,35 +610,6 @@ header .nav
 .main .btn a:hover
 {
 	color: #fff;
-}
-.bullets_container
-{
-	display: inline-block;
-	opacity: 0;
-	background-color: #fff;
-	padding: 10px;
-	border-radius: 3px;
-	transition: opacity .3s ease-out;
-}
-.bullets_container button
-{
-	width: 15px;
-	height: 15px;
-	background-color: #506a85;
-	margin: 2.5px;
-	transition: background .3s ease-out;	
-}
-.bullets_container button:hover, .bullets_container button.is-active
-{
-	background-color: #00bb9b;	
-}
-.hero .orbit-bullets
-{
-	margin-top: -20px;
-}
-.hero:hover .orbit-controls button, .hero:hover .bullets_container
-{
-	opacity: 1;
 }
 .who_we_are
 {
