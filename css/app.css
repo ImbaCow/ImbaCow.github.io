@@ -527,7 +527,7 @@ header .nav
 }
 .hero .item_1
 {
-	background: url(images/hero_background.jpg) no-repeat center 0;
+	background: url(images/hero_background_1.jpg) no-repeat center center;
 	background-size: cover;
 }
 .hero .item_1 .item
@@ -539,6 +539,28 @@ header .nav
 	text-align: center;
 
 	margin-top: 60px;
+}
+.hero .item_2
+{
+	background: url(images/hero_background_2.jpg) no-repeat center center;
+	background-size: cover;
+}
+.hero .item_2 .item
+{
+	padding: 255px 0 220px;
+}
+.hero .item_2 .item .btn 
+{
+	text-align: center;
+
+	margin-top: 60px;
+}
+.hero .item_2 .tittle
+{
+	text-align: right;
+	font-size: 78px;
+	letter-spacing: 5px;
+	line-height: 88px;
 }
 .main .btn a
 {
@@ -552,10 +574,6 @@ header .nav
 .main .btn a:hover
 {
 	color: #fff;
-}
-.orbit-bullets
-{
-	margin-top: -20px;
 }
 .bullets_container
 {
@@ -578,13 +596,17 @@ header .nav
 {
 	background-color: #00bb9b;	
 }
+.hero .orbit-bullets
+{
+	margin-top: -20px;
+}
 .hero:hover .orbit-controls button, .hero:hover .bullets_container
 {
 	opacity: 1;
-} 
+}
 .who_we_are
 {
-	padding: 120.5px 0 109px;
+	padding: 81.5px 0 109px;
 }
 .who_we_are .sub_tittle
 {
@@ -733,11 +755,11 @@ header .nav
 
 	padding-top: 2.6px;
 }
-.latest_works .carousel>div
+.latest_works .carousel_item>div
 {
 	padding-bottom: 10px;
 }
-.latest_works .carousel .cover .image::before
+.latest_works .carousel_item .cover .image::before
 {
 	display: inline-block;
 	width: 100%;
@@ -757,43 +779,43 @@ header .nav
 	left: 0;
 	z-index: 1;
 }
-.latest_works .carousel .cover .image.first::before
+.latest_works .carousel_item .cover .image.first::before
 {
 	content: 'Astor & Yancy';
 }
-.latest_works .carousel .cover .image.second::before
+.latest_works .carousel_item .cover .image.second::before
 {
 	content: 'Astor & Yancy';
 }
-.latest_works .carousel .cover .image.third::before
+.latest_works .carousel_item .cover .image.third::before
 {
 	content: 'Astor & Yancy';
 }
-.latest_works .carousel .cover .image.four::before
+.latest_works .carousel_item .cover .image.four::before
 {
 	content: 'Astor & Yancy';
 }
-.latest_works .carousel .cover .image.first::after
+.latest_works .carousel_item .cover .image.first::after
 {
 	content: 'Identity';
 }
-.latest_works .carousel .cover .image.second::after
+.latest_works .carousel_item .cover .image.second::after
 {
 	content: 'Identity';
 }
-.latest_works .carousel .cover .image.third::after
+.latest_works .carousel_item .cover .image.third::after
 {
 	content: 'Identity';
 }
-.latest_works .carousel .cover .image.four::after
+.latest_works .carousel_item .cover .image.four::after
 {
 	content: 'Identity';
 }
-.latest_works .carousel .cover:hover .image::before
+.latest_works .carousel_item .cover:hover .image::before
 {
 	opacity: 1;
 }
-.latest_works .carousel .cover .image::after
+.latest_works .carousel_item .cover .image::after
 {
 	background-image: none;
 	line-height: 185px;
@@ -805,56 +827,40 @@ header .nav
 
 	padding-top: 15px;
 }
-.pag_container
+.latest_works .bullets_container
 {
-	text-align: center;
-	margin-top: 27px;
+	margin-top: 10px;
+	background-color: transparent;
+	opacity: 1;
 }
-.pag_container>a, .pag_container>div
-{
-	display: inline-table;
-	vertical-align: middle;
-}
-.pag_container .left, .pag_container .right
+.latest_works .orbit-controls button 
 {
 	border-radius: 3px;
-	background: url(images/icon_arrow_small.png) no-repeat center center #3c5065;
+	display: block;
 	opacity: 0;
+	background: url(images/icon_arrow_small.png) no-repeat center center #3c5065;
+	transform: translateY(0%);
 	width: 30px;
 	height: 30px;
-	transition: opacity .3s ease-out;
+	transition: .3s ease-out;
+	transition-property: background, opacity;
+	top: calc(100% - 40.25px);
+	left: calc(50% - 80px);
 }
-.latest_works .carousel:hover .left, .latest_works .carousel:hover .right
+.latest_works .orbit-controls .orbit-next
+{
+	transform: rotate(180deg);
+	left: auto;
+	right: calc(50% - 80px);
+}
+.latest_works .orbit:hover .orbit-controls button
 {
 	opacity: .5;
 }
-.latest_works .pag_container .left:hover, .latest_works .pag_container .right:hover
+.latest_works .orbit .orbit-controls button:hover
 {
 	background: url(images/icon_arrow_small_1.png) no-repeat center center #506a85;	
 	opacity: 1;
-}
-.pag_container .right
-{
-	transform: rotate(180deg);
-}
-.pag
-{
-	margin: 0 7px 0;
-	text-align: center;
-}
-.pag a
-{
-	vertical-align: middle;
-	transition: background .3s ease-out;
-	display: inline-block;
-	height: 15px;
-	width: 25px;
-	background: url(images/indicator_off.png) no-repeat center center;
-}
-.pag a:hover
-{
-	outline: none;
-	background: url(images/indicator_on.png) no-repeat center center;
 }
 .get_in_touch
 {
