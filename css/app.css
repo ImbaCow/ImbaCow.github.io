@@ -541,25 +541,26 @@ header .nav
 .hero .item .text
 {
 	line-height: 34px;
-
 	font-family: "Source Sans Pro";
 	text-align: center;
 	color: #a3b1bf;
 	font-size: 22px;
 	letter-spacing: 1.3px;
-
 	margin-top: 22px;
+}
+.hero .item .btn 
+{
+	margin-top: 60px;
 }
 .hero .item .btn a
 {
 	padding-left: 70px;
 	padding-right: 67.2px;
-
 	line-height: 32px;
 	height:  63px;
-
 	letter-spacing: 0.7px;
 	font-size: 18px;
+	margin:  0;
 }
 .hero .item_1
 {
@@ -568,13 +569,8 @@ header .nav
 }
 .hero .item_1 .item
 {
-	padding: 293px 0 288px;
-}
-.hero .item_1 .item .btn 
-{
+	padding: 295px 0 303px;
 	text-align: center;
-
-	margin-top: 60px;
 }
 .hero .item_2
 {
@@ -583,13 +579,8 @@ header .nav
 }
 .hero .item_2 .item
 {
-	padding: 255px 0 220px;
-}
-.hero .item_2 .item .btn 
-{
-	text-align: center;
-
-	margin-top: 60px;
+	padding: 255px 0 237px;
+	text-align: right;
 }
 .hero .item_2 .tittle
 {
@@ -597,6 +588,92 @@ header .nav
 	font-size: 78px;
 	letter-spacing: 5px;
 	line-height: 88px;
+}
+.hero .item_2 .text
+{
+	color: #fff;
+	text-align: right;
+}
+.hero .item_3
+{
+	background: url(images/hero_background_3.jpg) no-repeat center center;
+	background-size: cover;
+}
+.hero .item_3 .item
+{
+	padding: 204px 0 196px;
+	text-align: left;
+}
+.hero .item_3 .tittle
+{
+	font-size: 73px;
+	display: inline-block;
+	letter-spacing: 4px;
+	line-height: 125px;
+	padding: 0 42px;
+	margin: 0 0 5px;
+
+	background-color: #506a85;
+}
+.hero .item_3 .text
+{
+	color: #506a85;
+	text-align: left;
+	margin: 30px 0 0;
+}
+.hero .item_4
+{
+	background: url(images/hero_background_4.jpg) no-repeat center center;
+	background-size: cover;
+}
+.hero .item_4 .item
+{
+	text-align: right;
+	padding: 85px 0 322px;
+}
+.hero .item_4 .tittle
+{
+	font-size: 73px;
+	display: inline-block;
+	letter-spacing: 4px;
+	line-height: 125px;
+	padding: 0 46px;
+	margin: 0 0 5px;
+
+	background-color: #506a85;
+}
+.hero .item_4 .text
+{
+	color: #fff;
+	text-align: right;
+	margin: 23px 0 0;
+}
+.hero .item_5
+{
+	background: url(images/hero_background_5.jpg) no-repeat center center;
+	background-size: cover;
+}
+.hero .item_5 .item
+{
+	text-align: center;
+	padding: 85px 0 397px;
+}
+.hero .item_5 .tittle
+{
+	font-size: 73px;
+	display: inline-block;
+	letter-spacing: 6px;
+	line-height: 90px;
+	padding: 0 46px;
+	margin: 0 0 5px;
+}
+.hero .item_5 .text
+{
+	color: #a3b1bf;
+	text-align: center;
+	font-size: 24px;
+	letter-spacing: 0.6px;
+	margin: 23px 0 0;
 }
 .main .btn a
 {
