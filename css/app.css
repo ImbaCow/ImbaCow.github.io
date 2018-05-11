@@ -579,6 +579,10 @@ header .nav
 	font-size: 18px;
 	margin:  0;
 }
+.hero .item
+{
+	height: 881px
+}
 .hero .item_1
 {
 	background: url(images/hero_background_1.jpg) no-repeat center center;
@@ -586,7 +590,7 @@ header .nav
 }
 .hero .item_1 .item
 {
-	padding: 295px 0 303px;
+	padding: 295px 0 0;
 	text-align: center;
 }
 .hero .item_2
@@ -596,7 +600,7 @@ header .nav
 }
 .hero .item_2 .item
 {
-	padding: 255px 0 237px;
+	padding: 255px 0 0;
 	text-align: right;
 }
 .hero .item_2 .tittle
@@ -618,7 +622,7 @@ header .nav
 }
 .hero .item_3 .item
 {
-	padding: 204px 0 196px;
+	padding: 204px 0 0;
 	text-align: left;
 }
 .hero .item_3 .tittle
@@ -646,7 +650,7 @@ header .nav
 .hero .item_4 .item
 {
 	text-align: right;
-	padding: 85px 0 322px;
+	padding: 85px 0 0;
 }
 .hero .item_4 .tittle
 {
@@ -673,7 +677,7 @@ header .nav
 .hero .item_5 .item
 {
 	text-align: center;
-	padding: 85px 0 397px;
+	padding: 85px 0 0;
 }
 .hero .item_5 .tittle
 {
