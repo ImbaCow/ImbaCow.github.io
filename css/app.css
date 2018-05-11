@@ -269,6 +269,7 @@ header .nav
 }
 .nav_links
 {
+	width: max-content !important;
 	display: inline-block;
 }
 .nav_links>a, .dropdown_list>a, .dropdown_menu>a
