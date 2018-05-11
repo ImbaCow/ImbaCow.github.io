@@ -13,14 +13,18 @@ function onWindowLoaded() {
 }
 
 function onScroll() {
-	if ((window.pageYOffset > START_HEADER_OFFSET)  && ($(document).width() > 1023)) {
+	if ($(document).width() > 1023) {
+		if (window.pageYOffset > START_HEADER_OFFSET) {
 		var percentScaling = 0;
 		if (window.pageYOffset < STOP_HEADER_OFFSET) {
 			percentScaling = 1 - (window.pageYOffset - START_HEADER_OFFSET) / (STOP_HEADER_OFFSET - START_HEADER_OFFSET);
 		};	
 		$("header .nav").css('padding', HEADER_HEIGHT * percentScaling + 'px 0');
 		$(".navbar .logo img").css('height', LOGO_HEIGHT * percentScaling + 20  + 'px');
-	};
+		};
+	} else {
+		$(".navbar .logo img").css('height', LOGO_HEIGHT + 20  + 'px');
+	}
 }
 
 function onSrcollTopButtonClick() {

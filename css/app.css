@@ -1229,6 +1229,38 @@ footer form .button
 	{
 		width: 30% !important;
 	}	
+	.orbit-controls
+	{
+		display: none;
+	}
+	.nav_links
+	{
+		width: 100% !important;
+		padding-top: 40px;
+		text-align: center;
+	}
+	.dropdown_list, .dropdown_menu, .nav_links>a, .dropdown_list>a, .dropdown_menu>a
+	{
+		display: block;
+	}
+	.dropdown_list ul, .dropdown_menu>div
+	{
+		position: static;
+		margin: 0;
+	}
+	.dropdown_list li, .dropdown_list li a
+	{
+		width: 100%;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 1024px)
+{
+	.main .hero .tittle
+	{
+		padding: 0;
+		letter-spacing: 2px;
+	}
 }
 @media screen and (max-width: 640px) 
 {
@@ -1253,5 +1285,14 @@ footer form .button
 	.latest_works_small
 	{
 		width: 50% !important;
+	}
+	.main .hero .item
+	{
+		padding-top: 25%;
+	}
+	.main .hero .tittle
+	{
+		line-height: 70px;
+		display: block;
 	}	
 }
