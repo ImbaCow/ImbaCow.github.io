@@ -333,6 +333,10 @@ header .nav
 	padding: 35px 40px 40px;
 	z-index: 1;
 }
+.dropdown_menu>div>div
+{
+	padding-bottom: 40px;
+}
 .dropdown_list:hover ul, .dropdown_list li
 {
 	display: block;
