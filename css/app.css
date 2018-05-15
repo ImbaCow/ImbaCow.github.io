@@ -261,9 +261,8 @@ header .nav
 {
 	display: inline-block;
 	line-height: 50px;
+	transition: 0.2s ease-out;
 	transition-property: box-shadow, color, background;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-out;
 
 	padding: 0 19.5px 0;
 
