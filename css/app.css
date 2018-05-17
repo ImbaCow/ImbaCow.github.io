@@ -221,37 +221,27 @@ header .nav
 	line-height: 50px;
 	transition: .2s ease-out;
 	transition-property: box-shadow, color, background;
-
 	padding: 0 19.5px 0;
-
 	font-size: 15px;
 	letter-spacing: 0.2px;
 	color: rgb(80,106,133);
 	font-family: "Source Sans Pro";
 	font-weight: bold;
-
 	position: relative;
 	z-index: 2;
 }
-.nav_links>a:hover
+.dropdown_list:hover>a, .dropdown_menu:hover>a, .nav_links>a:hover
 {
-	box-shadow: 5px 8.66px 10px rgba(0,0,0,0.1);
 	background-color: #f5f7f9;
 	border: 1px solid #e5e9ed;
 	line-height: 48px;
-	border-radius: 3px 3px 0 0;
-
 	color: #00bb9b;
+	padding: 0 18.5px 0;
+	border-radius: 3px 3px 0 0;
 }
-.dropdown_list>a:hover, .dropdown_list:hover>a, .dropdown_menu:hover>a, .dropdown_menu>a:hover
+.dropdown_list:hover>a, .dropdown_menu:hover>a
 {
-	background-color: #f5f7f9;
-	border: 1px solid #e5e9ed;
-	line-height: 48px;
-	border-bottom: none;	
-	color: #00bb9b;
-
-	border-radius: 3px 3px 0 0;
+	border-bottom: none ;
 }
 .dropdown_list
 {
@@ -265,7 +255,6 @@ header .nav
 	box-shadow: 0 10px 10px rgba(0,0,0,0.15);
 	background-color: #f5f7f9;
 	border-radius: 0 3px 3px;
-
 	margin: -1px 0 0;
 }
 .dropdown_menu
@@ -279,7 +268,6 @@ header .nav
 	border: 1px solid #e5e9ed;
 	border-radius: 3px;
 	background-color: #f5f7f9;
-
 	position: absolute;
 	left: 0;
 	margin-top: -1px;
@@ -1025,7 +1013,7 @@ footer .text
 	max-width: 125px;
 	height: 85px;
 
-	margin: 0 5px 5px 0;
+	margin: 0 1px 5px 0;
 }
 .get_in_touch_small .contact div, .get_in_touch_small .contact a
 {
@@ -1143,7 +1131,7 @@ footer form .button
 }
 .footer_ending .nav div:not(.last)::after
 {
-	content: "·";
+	content: "Â·";
 	font-family: "Source Sans Pro";
 	color: rgb(112,126,140);
 
