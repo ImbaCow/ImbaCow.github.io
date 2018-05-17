@@ -774,20 +774,19 @@ header .nav
 	border-radius: 3px;
 	background-color: #fff;
 	box-shadow: .5px .866px 0px #e5e9ed;
+	text-align: center;
 }
 .latest_works .figure .figcaption .sub_tittle
 {
 	font-size: 20px;
-	letter-spacing: .6px;
-	color: rgb(80,106,133);
-	font-family: "Lato";
-	font-weight: bold;
-	text-align: center;
-
-	padding: 26px 0 0;
-	margin:  0;
+    letter-spacing: .6px;
+    color: rgb(80,106,133);
+    font-family: "Lato";
+    font-weight: bold;
+    margin: 26px 0 0;
+    display: inline-block;
 }
-.latest_works .figure:hover .figcaption .sub_tittle
+.latest_works .figure .figcaption .sub_tittle:hover
 {
 	color: #00bc9c;
 }
@@ -797,7 +796,6 @@ header .nav
 	letter-spacing: 0px;
 	color: #73879c;
 	font-family: "Source Sans Pro";
-	text-align: center;
 
 	padding-top: 2.6px;
 }
